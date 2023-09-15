@@ -20,15 +20,58 @@ function isPalindroma(wordIn){
   
   //3.
   const wordInvert = wordIn.split('').reverse().join('');
-  console.log(wordInvert);
 
   //4.
   return wordIn === wordInvert;
 }
-console.log(isPalindroma(wordIn))
 //5.
 if (isPalindroma(wordIn)) {
   console.log(wordIn + " è una parola palindroma.");
 } else {
   console.log(wordIn + " non è una parola palindroma.");
 }
+
+/* ##Esercizio 2
+- ***Svolgimento***
+
+1. Creiamo due funzioni:
+    - Randomizer (generatore randomico di nummeri da 1 a 5)
+    - evenControl [controlla se sia pari o dispari un numero (mi dara un risultato booleano da poter sfruttare con il ternary operator)]
+
+2. Andiamo a chiedere con un prompt "Pari o Dispari"
+
+3. **Effettuiamo un controllo** 
+    - se ciò che è stato inserito non corrisponde a uno dei valori sopra indicati:(Pari o Dispari) blocchiamo la procedura, altrimenti si procede
+
+4. Andiamo a chiedere con un prompt "Scegli il tuo numero da 1 a 5"
+
+5. **Effettuiamo un controllo** 
+    - se ciò che è stato inserito non corrisponde a uno dei valori o all'intervallo dei numeri scelti sopra indicati:("Scegli il tuo numero da 1 a 5") blocchiamo la procedura, altrimenti si procede
+
+6. Effettuati i controlli in una costante genero in numero randomico con la funzione
+
+7. In una costante vado a sommare i due numeri(user vs random);
+
+8. Creo un (ternary) operetor per dare il risultato  ? 'pari' : 'dispari'
+
+9. Se il valore ("Pari o Dispari") scelto in precedenza corrispondi al risultato del ternary scrivere **Ha vinto l'utente**
+10. Altrimenti **Ha vinto il pc**
+*/
+
+//1. 
+//1.Randomaizer
+/**
+ * 
+ * @param {Number} min 
+ * @param {Number} max 
+ */
+function Randomizer (min, max) {
+  return Math.floor(Math.random() * 5) + 1;
+}
+console.log(Randomizer(1, 6))
+
+//1.EvenControl
+function evenControl (numero) {
+  return numero % 2 === 0;
+}
+console.log(evenControl(Randomizer))
