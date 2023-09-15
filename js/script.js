@@ -89,4 +89,7 @@ else{
   //4.
   const userNum = prompt('Scegli il tuo numero da 1 a 5');
   console.log(userNum);
+  //5.
+  if (userNum < 1 || userNum > 5 || isNaN(userNum)) console.log('Inserisci un NUMERO COMPRESO tra 1 e 5');
+  else console.log('BRAVAO')
 }
