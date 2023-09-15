@@ -61,17 +61,30 @@ if (isPalindroma(wordIn)) {
 //1. 
 //1.Randomaizer
 /**
- * 
- * @param {Number} min 
- * @param {Number} max 
+ * Generatore randomico di numeri
+ * @param {number} min 
+ * @param {number} max 
  */
-function Randomizer (min, max) {
+function randomizer (min, max) {
   return Math.floor(Math.random() * 5) + 1;
 }
-console.log(Randomizer(1, 6))
 
 //1.EvenControl
+/**
+ * Controllo 'pari e dispari'
+ * @param {number}
+ * @returns 
+ */
 function evenControl (numero) {
   return numero % 2 === 0;
 }
-console.log(evenControl(Randomizer))
+
+//2.
+const userChoice = prompt('Scegli tra pari e dispari').toLowerCase();
+console.log(userChoice);
+
+//3.
+if (userChoice !== 'pari' && userChoice !== 'dispari') console.log('Valore inserito non valido');
+else{
+  console.log('bravo');
+}
