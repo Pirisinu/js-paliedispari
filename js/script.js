@@ -52,7 +52,7 @@ if (isPalindroma(wordIn)) {
 
 7. In una costante vado a sommare i due numeri(user vs random);
 
-8. Creo un (ternary) operetor per dare il risultato  ? 'pari' : 'dispari'
+8. Creo un (ternary) operetor con (evenControl(somma dei due numeri)) come parametro per dare il risultato  ? 'pari' : 'dispari'
 
 9. Se il valore ("Pari o Dispari") scelto in precedenza corrispondi al risultato del ternary scrivere **Ha vinto l'utente**
 10. Altrimenti **Ha vinto il pc**
@@ -99,5 +99,13 @@ else{
     //7.
     const sumResult = pcNum + userNum;
     console.log(sumResult);
+    //8.
+    const gameResult= evenControl(sumResult)? 'pari' : 'dispari';
+    console.log(gameResult);
+
+    //9.
+    if (gameResult === userChoice) console.log("ha vinto l'utente");
+    //10.
+    else console.log("ha vinto il pc")
   }
 }
