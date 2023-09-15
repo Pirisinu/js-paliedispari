@@ -86,5 +86,7 @@ console.log(userChoice);
 //3.
 if (userChoice !== 'pari' && userChoice !== 'dispari') console.log('Valore inserito non valido');
 else{
-  console.log('bravo');
+  //4.
+  const userNum = prompt('Scegli il tuo numero da 1 a 5');
+  console.log(userNum);
 }
