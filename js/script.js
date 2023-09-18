@@ -10,10 +10,11 @@
 5. Creo un if in cui con la condizione in entrata verifico il valore della parola controllata 
     - Se il valore della paorla è uguale alla parola mando a schermo: ***La tua parola è Palidroma***
     - Alrimenti mando a schermo: ***La tua parola non è Palidroma***
+NEW 5.  Svolgo la stessa cosa del punto 5 ma con il ternary operator
 */
 
 //1.
-const wordIn = prompt('Inserire una parola');
+const wordIn = prompt('Inserire una parola'); 
 
 //2.
 function isPalindroma(wordIn){
@@ -30,6 +31,7 @@ function isPalindroma(wordIn){
 } else {
   console.log(wordIn + " è una parola palindroma.");
 } */
+//NEW 5.
 const outMessage = isPalindroma(wordIn) ? " è una parola palindroma." : "non è una parola palindroma."
 console.log(outMessage);
 
