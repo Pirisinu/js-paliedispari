@@ -25,11 +25,13 @@ function isPalindroma(wordIn){
   return wordIn === wordInvert;
 }
 //5.
-if (isPalindroma(wordIn)) {
+/* if (isPalindroma(wordIn)) {
   console.log(wordIn + " è una parola palindroma.");
 } else {
-  console.log(wordIn + " non è una parola palindroma.");
-}
+  console.log(wordIn + " è una parola palindroma.");
+} */
+const outMessage = isPalindroma(wordIn) ? " è una parola palindroma." : "non è una parola palindroma."
+console.log(outMessage);
 
 /* ##Esercizio 2
 - ***Svolgimento***
